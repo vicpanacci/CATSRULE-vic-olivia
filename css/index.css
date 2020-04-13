@@ -29,6 +29,7 @@ body {
     width: 0%;
     height: 1.25em;
     overflow: hidden;
+    z-index: 100;
   }
   
   .mainnav > li{
@@ -37,6 +38,7 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     vertical-align: top;
+    z-index: 98;
 
   }
 
@@ -255,6 +257,7 @@ body {
     top: 100%;
     margin: -10px 0 0 -10px;
     pointer-events: none;
+    z-index: 99;
 }
 
   /* #content{
