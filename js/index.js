@@ -28,6 +28,23 @@ console.log(h1Top, h1Height, amtScrolled)
     }
     })
 
+    window.addEventListener('click', (event) => {
+        console.log(`Info about the Event: `, event);
+        // The element that the image will be added to
+        const $parent = document.querySelector('body')
+        // Create the new <img> element
+        const $img = document.createElement('img')
+        // Add the <img> to the parent element
+        $parent.appendChild($img)
+        // Give the image the appropriate attributes
+        $img.setAttribute('src', 'img/pawproint-mouse')
+        $img.setAttribute('alt', 'paw print')
+        $img.className = 'hello'
+        // Put the image wherever the click happened
+        $img.style.left = `${event.screenX}px`
+        $img.style.top = `${event.screenY}px`
+    })
+
     var $ = document.querySelector.bind(document)
     var $on = document.addEventListener.bind(document);
     

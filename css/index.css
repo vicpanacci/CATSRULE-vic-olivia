@@ -15,6 +15,10 @@ body {
     margin: 1em 0;
 
   }
+
+  .hello {
+    position: fixed;
+  }
   
   .progressBar {
     /* background-color: limegreen; */
